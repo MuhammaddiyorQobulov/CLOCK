@@ -22,6 +22,11 @@ body {
     border-radius: 50%;
     width: 50vw;
     height: 50vw;
+    background-image: url(./photo_2022-05-01_19-07-54.jpg);
+    background-repeat: no-repeat;
+    background-size:52vw;
+    background-position: -2vw -1.5vw;
+    border: 10px solid blue;
 }
 
 
@@ -30,7 +35,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50vw;
-    border: 5px solid blue;
+    border: none;
     display: flex;
     justify-content: center;
 }
