@@ -14,7 +14,88 @@ body {
     align-items: center;
 }
 
-.container {
+
+
+
+.simpleSoat {
+    background-color: white;
+    border-radius: 50%;
+    width: 50vw;
+    height: 50vw;
+}
+
+
+.clockBorder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50vw;
+    border: 5px solid blue;
+    display: flex;
+    justify-content: center;
+}
+
+.sekundMili {
+    position: absolute;
+    width: 0.3vw;
+    height: 20vw;
+    margin-top: 4.4vw;
+    background-color: red;
+    transform-origin: bottom center;
+}
+
+.minutMili {
+    position: absolute;
+    width: 0.5vw;
+    height: 15vw;
+    margin-top: 9.4vw;
+    background-color: blue;
+    transform-origin: bottom center;
+    animation:  3600s infinite cubic-bezier(1, 1, 1, 1);
+}
+
+.soatMili {
+    position: absolute;
+    width: 0.75vw;
+    height: 10vw;
+    margin-top: 14.35vw;
+    background-color: greenyellow;
+    transform-origin: bottom center;
+    animation: 216000s infinite cubic-bezier(1, 1, 1, 1);
+}
+
+.animation1{
+    animation:animation 60s infinite cubic-bezier(1, 1, 1, 1);
+}
+
+.animation2{
+    animation:animation 3600s infinite cubic-bezier(1, 1, 1, 1);
+}
+
+.animation3{
+    animation:animation 216000s infinite cubic-bezier(1, 1, 1, 1);
+}
+
+
+.sentr {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    background-color: black;
+    margin-top: 23.1vw;
+    border-radius: 50%;
+
+}
+
+
+@keyframes animation {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.electronSoat {
     display: flex;
     font-size: 15vw;
     color: green;
@@ -27,6 +108,7 @@ body {
 
 
 button {
+    display: block;
     width: 30vw;
     height: 6vw;
     font-size: 4vw;

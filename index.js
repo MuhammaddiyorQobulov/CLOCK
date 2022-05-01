@@ -3,13 +3,21 @@ const minut = document.querySelector(".minut");
 const sekund = document.querySelector(".sekund");
 const startBtn = document.querySelector(".startBtn");
 const refreshBtn = document.querySelector(".refreshBtn");
+const sekundMili = document.querySelector(".sekundMili");
+const minutMili = document.querySelector(".minutMili");
+const soatMili = document.querySelector(".soatMili");
 
 let sekundVal = -1;
 let minutVal = 0;
 let hourVal = 0;
+
 startBtn.addEventListener("click", function sekundCount() {
-  startBtn.style.display = "none";
+  sekundMili.classList.add("animation1");
+  minutMili.classList.add("animation2");
+  soatMili.classList.add("animation3");
+
   refreshBtn.style.display = "block";
+  startBtn.style.display = "none";
 
   if (sekundVal == 59) {
     minutVal++;
@@ -31,8 +39,8 @@ startBtn.addEventListener("click", function sekundCount() {
 
   if (hourVal == 23) {
     sekundVal = -1;
-    minutVal = -1;
-    hourVal = -1;
+    minutVal = 0;
+    hourVal = 0;
   }
 
   setTimeout(() => {
