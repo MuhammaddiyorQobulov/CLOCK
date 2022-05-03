@@ -7,26 +7,27 @@
 
 body {
     background: #000;
-    padding: 10vw 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-
+.clocks {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7vw;
+}
 
 
 .simpleSoat {
     background-color: white;
     border-radius: 50%;
-    width: 50vw;
-    height: 50vw;
-    background-image: url(./photo_2022-05-01_19-07-54.jpg);
-    background-repeat: no-repeat;
-    background-size:52vw;
-    background-position: -2vw -1.5vw;
-    border: 10px solid blue;
+    width: 25vw;
+    height: 25vw;
+    border: 0px solid blue;
 }
 
 
@@ -34,60 +35,64 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 50vw;
+    border-radius: 25vw;
     border: none;
     display: flex;
     justify-content: center;
+    background-image: url(./photo_2022-05-01_19-07-54.jpg);
+    background-repeat: no-repeat;
+    background-size: 26.3vw;
+    background-position: -0.5vw;
 }
 
 .sekundMili {
     position: absolute;
-    width: 0.3vw;
-    height: 20vw;
-    margin-top: 4.4vw;
+    width: 0.15vw;
+    height: 10vw;
+    margin-top: 2.2vw;
     background-color: red;
     transform-origin: bottom center;
 }
 
 .minutMili {
     position: absolute;
-    width: 0.5vw;
-    height: 15vw;
-    margin-top: 9.4vw;
+    width: 0.25vw;
+    height: 7.5vw;
+    margin-top: 4.7vw;
     background-color: blue;
     transform-origin: bottom center;
-    animation:  3600s infinite cubic-bezier(1, 1, 1, 1);
+    animation: 3600s infinite cubic-bezier(1, 1, 1, 1);
 }
 
 .soatMili {
     position: absolute;
-    width: 0.75vw;
-    height: 10vw;
-    margin-top: 14.35vw;
+    width: 0.375vw;
+    height: 5vw;
+    margin-top: 7.175vw;
     background-color: greenyellow;
     transform-origin: bottom center;
     animation: 216000s infinite cubic-bezier(1, 1, 1, 1);
 }
 
-.animation1{
-    animation:animation 60s infinite cubic-bezier(1, 1, 1, 1);
+.animation1 {
+    animation: animation 60s infinite cubic-bezier(1, 1, 1, 1);
 }
 
-.animation2{
-    animation:animation 3600s infinite cubic-bezier(1, 1, 1, 1);
+.animation2 {
+    animation: animation 3600s infinite cubic-bezier(1, 1, 1, 1);
 }
 
-.animation3{
-    animation:animation 216000s infinite cubic-bezier(1, 1, 1, 1);
+.animation3 {
+    animation: animation 216000s infinite cubic-bezier(1, 1, 1, 1);
 }
 
 
 .sentr {
     position: absolute;
-    width: 3vw;
-    height: 3vw;
-    background-color: black;
-    margin-top: 23.1vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #000;
+    margin-top: 11.5vw;
     border-radius: 50%;
 
 }
@@ -102,7 +107,7 @@ body {
 
 .electronSoat {
     display: flex;
-    font-size: 15vw;
+    font-size: 10vw;
     color: green;
 }
 
@@ -142,6 +147,15 @@ span {
         opacity: 1;
     }
 
+}
+
+
+@media screen and (max-width:580px) {
+    .clocks {
+        flex-direction: column;
+        row-gap: 5vw;
+        padding: 10vw;
+    }
 }
 
 button:active {
